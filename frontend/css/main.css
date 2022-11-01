@@ -1,0 +1,222 @@
+:root{
+    /* --blue:#27ae60;
+     /下面是爱马仕红  */
+    --red:rgb(235, 92, 92);
+    /* --red:#192a56;
+     /下面是蒂芙尼蓝  */
+    --blue:rgb(129,216,208);
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior:smooth
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--red);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--blue);
+    letter-spacing: .1rem;
+}
+
+.header{
+    top:0; left:0; right:0;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:var(--box-shadow);
+}
+
+.header .logo{
+    color:var(--red);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.header .logo i{
+    color: var(--blue);
+    letter-spacing: 1rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+
+.header .navbar a.active,
+.header .navbar a:hover{
+    color: #fff;
+    background: var(--blue);
+}
+
+.header .icons i, 
+.header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--red);
+    border-radius: 50%;
+    background: #eee;
+}
+
+.header .icons i:hover, 
+.header .icons a:hover{
+    color:#fff;
+    background: var(--blue);
+    transform: rotate(360deg);
+}
+
+.header .icons #menu-bars{
+    display:none;
+}
+
+body{
+    /* background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), 
+    url("/frontend/images/sunset.jpeg"); */
+    /* background-image: url(/frontend/images/sunset.jpeg);
+    background-position: center;
+    background-size: cover; */
+    min-height: 100vh;
+    width : 100%;
+    background-color: #fff;
+    background-color: aliceblue;
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+.container{
+    text-align: center;
+    justify-items: center;
+    gap:2rem;
+    padding-top: 9rem;
+}
+
+.login-title{
+    color: var(--red);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.container .img img{
+    border-radius: 50%;
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.form{
+    margin-bottom: 3rem;
+}
+.form .row{
+    max-width: 90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: .12rem solid rgba(0,0,0,.2);
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+    height: 5rem;
+    resize: none;
+    width:40rem;
+    font-size: 2rem;
+    color:var(--blue);
+    text-align: left;
+    letter-spacing:.1rem;
+}
+
+.form :-moz-placeholder{
+    color: blue;
+}
+
+#message-contenier{
+    display:none;
+    padding:1rem;
+    justify-content: center
+}
+#content{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 3rem;
+    width: 50rem;
+    background: rgb(254, 19, 19);
+    border-radius: 5rem;
+    font-size: 2rem;
+    gap:1.5rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+#message-contenier ::after :hover{
+        display:flex;
+        padding:1rem;
+        justify-content: center
+    }
+    
+
+
+
+
+
+
+@media(max-width:768px){
+    header .icons #menu-bars{
+        display:inline-block;
+    }
+    
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem ;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        /* 以下clip-path 用于剪辑区域， polygon为多边形， 后面参数为保留区域
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 0 100%); */
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 1rem;
+        background: #eee;
+    }
+    
+}

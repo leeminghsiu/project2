@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP331 website</title>
+    <!-- below one is link to swiper, CDN for slider swip  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- below are the styles from code awesome website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <!-- header seciton begin -->
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-utensils"></i>BPQ331</a>
+            <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="login.html" class="fa-solid fa-right-to-bracket" id="login-button"></a>
+            <a href="signIn.html" class="fa-regular fa-sign-hanging" id="isAuth"></a>
+            <a href="cart.html" class="fas fa-shopping-cart" id="cartIcon"></a> 
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- search form  -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section starts, IN this version, we start use external website function for slider section-->
+    <section class="home" id = "home">
+        <!-- below div class home-slider is the continer  -->
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>QingTao Beer</h3>
+                        <!-- ********************** misho: 1 -->
+                        <!-- 所有點餐按鈕的class增加了一個“order-btn”標籤，用於order.js點餐function -->
+                        <p>Tsingtao Beer, a well-hopped standard pale lager of 4.7% abv, is the flagship brew </p>
+                        <a href="#dishes" class="btn order-btn" number="1">Like</a>
+                        <!-- ###################### -->
+                    </div>
+                    <div class="image">
+                        <img src="images/摩婆豆腐1.png" class="images" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati veniam aliquam.</p>
+                        <a href="#dishes" class="btn order-btn" number="8">Like</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/青岛啤酒8.png" class="images" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati veniam aliquam.</p>
+                        <a href="#dishes" class="btn order-btn"  number="7">Like</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/绿豆糕7.png" class="images"  alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+    <!-- home section ends  -->
+    </section>
+
+    <!-- dish section start  -->
+    <section id="dishes" class="dishes">
+        <h3 class="sub-heading">our dishes</h3>
+        <h1 class="heading">pop dishes</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/宫保鸡丁2.png" class="images" alt="">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>¥30</span>
+                <a href="#" id="order-btn" number="2" class="btn order-btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/水煮肉片3.png" class="images" alt="">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>¥30</span>
+                <a href="#" class="btn order-btn" id="order-btn" number="3">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/家常豆腐4.png" class="images" alt="">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>¥30</span>
+                <a href="#" class="btn order-btn" id="order-btn" number="4">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/羊肉泡馍5.jpg" class="images" alt="">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>¥30</span>
+                <a href="#" class="btn order-btn" id="order-btn" number="5">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/干炒牛河6.png" class="images" alt="">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>¥30</span>
+                <a href="#" class="btn order-btn" id="order-btn" number="6">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/摩婆豆腐1.png" class="images" alt="">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>¥30</span>
+                <a href="#" class="btn order-btn" id="order-btn" number="1">add to cart</a>
+            </div>
+        
+        </div>
+    <!-- dish section ends  -->
+    </section>
+    <section id="add">
+        <h1>here will add</h1>
+    </section>
+
+    <!-- about seciton starts  -->
+    <section id="about" class="about">
+        <h3 class="sub-heading">about us</h3>
+        <h1 class="heading">why choose us?</h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/青岛啤酒8.png" class="images"  alt="">
+            </div>
+            <div class="content">
+                <h3>best food in the country</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia perferendis voluptate quod porro qui placeat quaerat, harum dignissimos illum debitis quos nulla nemo unde reprehenderit, non doloremque at adipisci.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free dilivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>easy payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a class="btn order-btn" id="order-btn" number="8">order</a>
+            </div>
+        </div>
+    <!-- about section ends  -->
+    </section>
+
+    <!-- menu section starts  -->
+    <section id="menu" class="menu">
+        <h3 class="sub-heading">our menu</h3>
+        <h1 class="heading">today's speciality</h1>       
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/青岛啤酒8.png" class="images" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>delicious food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn order-btn" id="order-btn" number="8">add to cart</a>
+                    <span class="price">¥30</span>
+                </div>
+            </div>
+        </div>
+
+    <!-- menu section ends  -->
+    </section>
+
+    <!-- review section start -->
+    <section id="review" class="review">
+        <h3 class="sub-heading">customer's review</h3>
+        <h1 class="heading">what they say</h1> 
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="fas fa-quote-right"></div>
+                    <div class="user">
+                        <img src="images/gaoxiang's logo2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="starts">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p>Here is what user want to tell others</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="fas fa-quote-right"></div>
+                    <div class="user">
+                        <img src="images/gaoxiang's logo2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="starts">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p>Here is what user want to tell others</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="fas fa-quote-right"></div>
+                    <div class="user">
+                        <img src="images/gaoxiang's logo2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="starts">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p>Here is what user want to tell others</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="fas fa-quote-right"></div>
+                    <div class="user">
+                        <img src="images/gaoxiang's logo2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="starts">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p>Here is what user want to tell others</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="fas fa-quote-right"></div>
+                    <div class="user">
+                        <img src="images/gaoxiang's logo2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="starts">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p>Here is what user want to tell others</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- review section ends  -->
+    </section>
+
+    <!-- order section starts  -->
+    <section id="order" class="order">
+        <h3 class="sub-heading">order now</h3>
+        <h1 class="heading">free and fast</h1> 
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name" name="" id="" class="">
+                </div>
+                <div class="input">
+                    <span>your number</span>
+                    <input type="number" placeholder="enter your number" name="" id="" class="">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your order</span>
+                    <input type="text" placeholder="enter food name" name="" id="" class="">
+                </div>
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="text" placeholder="extra with food" name="" id="" class="">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>how much</span>
+                    <input type="number" placeholder="how many orders" name="" id="" class="">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input type="datetime-local" placeholder="" name="" id="" class="">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="order now" class="btn">
+        </form>
+        <form action="/order" id= "order_index" class="orders" method="POST" name="orders">
+            <input type="text" id="input-value_1" name='proNum' placeholder=""> 
+        </form>
+    <!-- order section ends  -->
+    </section>
+
+    <!-- footer section starts  -->
+    <section id="footer" class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">San Francisco</a>
+                <a href="#">Boston</a>
+                <a href="#">NewYork</a>
+                <a href="#">Los Angeles</a>
+                <a href="#">Seattle</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">dishes</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">review</a>
+                <a href="#">order</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+1 765-7029095</a>
+                <a href="#">+86 139-9124-5345</a>
+                <a href="#">zhang.gaox@northeastern.edu</a>
+                <a href="#">myjimmy1098@gmail.com</a>
+                <a href="#">电话:+86 139-9124-5345</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.linkedin.com/in/gaoxiang-zhang-a92645231/">facebook</a>
+                <a href="https://twitter.com/gaoxiang_zhang">twitter</a>
+                <a href="https://www.linkedin.com/in/gaoxiang-zhang-a92645231/">insagram</a>
+                <a href="https://www.linkedin.com/in/gaoxiang-zhang-a92645231/">linkedin</a>
+                <a href="https://www.linkedin.com/in/gaoxiang-zhang-a92645231/">wechat</a>
+            </div>
+        </div>
+        <div class="credit">copyright @ 2022 by <span>Zhang & Lee</span></div>
+    <!-- footer section ends  -->
+    </section>
+
+    <!-- loader part  -->
+    <div class="loader-container">
+        <img src="images/1_5ngZiNtGMrp_xmZHxSvJ0g.gif" alt="">
+    </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- below one is link to swiper, CDN for slider swip  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/order.js"></script>
+
+</body>
+</html>

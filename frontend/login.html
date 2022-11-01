@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to join us!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- below are the styles from code awesome website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-utensils"></i>BPQ331</a>
+        <nav class="navbar">
+            <a class="active" href="/index.html">home</a>
+            <a href="">dishes</a>
+            <a href="/index.html">about</a>
+            <a href="/index.html">review</a>
+            <a href="/index.html">order</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="login.html" class="fa-solid fa-right-to-bracket" id="login-button"></a>
+            <a href="signIn.html" class="fa-regular fa-sign-hanging" id="isAuth"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a> 
+        </div>
+    </section>
+    <section class="container">
+        <main>
+            <div class="login-title">
+                <h1>Please login here!</h1>
+            </div>
+            <div id="message-contenier" role="alert">
+                <div id="content">Opps!The password or username is wrong!</div>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+            </div>
+            <div class="img">
+                <section class="">
+                <img src="/images/gaoxiang's logo2.png" alt="">
+            </div>
+                
+                <!-- 此处用method=post是由于get会暴露密码 -->
+                <!-- POST not Post not post -->
+            <form action="/login" method="POST" class="form">
+                <div class="row">
+                    <label for="" class="form-label">
+                        User:  <input 
+                        name="user"
+                        type="text" 
+                        placeholder="eg:Abc123"
+                        class="form-control"
+                        />
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="" class="form-label">
+                        <!-- 此处用required是因为不用的话，可以不输入账号密码 -->
+                        Password:  <input 
+                        name="password" 
+                        type="text" 
+                        class="form-control"
+                        placeholder="eg:abc123"
+                        />
+                    </label>
+                </div>
+                <div class="m-2">
+                    <button class="btn btn-primary" type="submit">
+                        login
+                    </button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+     <script src="./js/client.js" ></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+    
+
+</html>
