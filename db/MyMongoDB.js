@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 
 export function MyMongoDB() {
     const myDB = {};
-    const uri_online = "mongodb+srv://iamcool:iamcool@cluster0.om73ot8.mongodb.net/?retryWrites=true&w=majority";
+
     // const uri_local = "mongodb://localhost:27017/CS5610project2";
     const client = new MongoClient(uri_online || uri_local);
     // const client = new MongoClient(uri_local);
