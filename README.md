@@ -1,4 +1,5 @@
 # project2
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/89007851/199324772-4af1786d-57d5-4eb0-854f-ecfe44813bc5.png">
 * Author: Gaoxiang Zhang & Ming Hsiu Lee
 
 * Project Objective:
