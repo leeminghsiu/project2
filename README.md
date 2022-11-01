@@ -33,7 +33,7 @@
   4. log in
     * your diet preference will appear on the user dashboard
     * you can see the dishes you ordered appear on user dashboard
-* Link to page: 
+* Link to page: https://ghastly-zombie-49481.herokuapp.com/
 * This is a student project of this class: https://johnguerra.co/classes/webDevelopment_fall_2022/
-* Link to the video demonstration: 
-* Link to the presentation slide: 
+* Link to the video demonstration:  https://www.youtube.com/watch?v=cWhg6ma0yzc
+* Link to the presentation slide:  https://docs.google.com/presentation/d/1zHBmdflRMfBda7mp7_DcB1uEs9cUig2d8iuxmsWLMcQ/edit#slide=id.g17ed65a4542_0_83
