@@ -1,5 +1,4 @@
 # project2
-<img width="393" alt="image" src="https://user-images.githubusercontent.com/89007851/199324772-4af1786d-57d5-4eb0-854f-ecfe44813bc5.png">
 * Author: Gaoxiang Zhang & Ming Hsiu Lee
 
 * Project Objective:
@@ -17,6 +16,8 @@
   * Wei is a time-conscious person, he likes to order food online and pick it up at the restaurant, so he can save a lot of time. Recently, he discovered a Chinese restaurant called BP331. The app of this restaurant can record his dining habits. For example, he does not like seafood and coriander. This app saves him from calling the restaurant and telling them his taboos. He is satisfied.
   
 * Screenshot:
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/89007851/199324772-4af1786d-57d5-4eb0-854f-ecfe44813bc5.png">
+
 * How to install/ use:
   * Running on local machine:
     * users have to install mongoDB in npm before runnong on local machine
