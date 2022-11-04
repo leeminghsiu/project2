@@ -23,6 +23,12 @@ router.post("/login", async (req, res) => {
   });
 
 //TODO record the info of new client 记录新客户的用户名和密ma
+
+// Here should be signup
+// Need to double check whether these already exist a user with the same information
+// One more litte dug, I notice that if I just click login without entering username and password, I can also login the website, 
+// I guess there exists one user whose name and password are both empty in database :)
+
 router.post("/signIn", async (req, res, ) => {
   const user = req.body;   // { user: 'xxx', password: 'yyy' }
   console.log("POST SignIn", user);
